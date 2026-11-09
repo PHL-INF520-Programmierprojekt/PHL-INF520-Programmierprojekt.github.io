@@ -1,0 +1,25 @@
+{
+  "schema": "classroom50/classroom/v1",
+  "name": "INF520 Programmierprojekt",
+  "short_name": "wise2627",
+  "term": "WiSe-2026-27",
+  "org": "PHL-INF520-Programmierprojekt",
+  "team": {
+    "id": 19978145,
+    "slug": "classroom50-wise2627"
+  },
+  "teams": {
+    "teacher": {
+      "id": 19978146,
+      "slug": "classroom50-wise2627-teacher"
+    },
+    "hta": {
+      "id": 19978147,
+      "slug": "classroom50-wise2627-hta"
+    },
+    "ta": {
+      "id": 19978148,
+      "slug": "classroom50-wise2627-ta"
+    }
+  }
+}

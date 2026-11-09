@@ -1,0 +1,463 @@
+{
+  "schema": "classroom50/assignments/v1",
+  "assignments": [
+    {
+      "slug": "ueb00",
+      "name": "ÜB 0: Objekte und Klassen",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-00-objekte-und-klassen-no-code",
+        "branch": "main"
+      },
+      "mode": "group",
+      "autograder": "default",
+      "max_group_size": 3,
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb00b",
+      "name": "ÜB 0,5: Eigene Lösung testen",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-00b-eigene-loesung-testen",
+        "branch": "main"
+      },
+      "description": "Übungsblatt, um eigene Lösungen zu testen",
+      "due": "2026-11-02T09:00:00Z",
+      "due_meta": {
+        "input": "2026-11-02T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-10-27T09:00:00Z",
+      "available_from_meta": {
+        "input": "2026-10-27T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "tests": [
+        {
+          "name": "SimpleCalculatorTestTest - Task 1 - calculator markdown exists",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.calculator.SimpleCalculatorTestTest.task_1_calculator_markdown_exists\"",
+          "points": 33,
+          "timeout": 120
+        },
+        {
+          "name": "SimpleCalculatorTest - Task 2 - all test cases succeed",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.calculator.SimpleCalculatorTestTest.task_2_all_test_cases_succeed\"",
+          "points": 33
+        },
+        {
+          "name": "SimpleCalculatorTestTest - Task 1 - test cases filled out",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.calculator.SimpleCalculatorTestTest.task_1_test_cases_filled_out\"",
+          "points": 33
+        }
+      ]
+    },
+    {
+      "slug": "ueb01",
+      "name": "ÜB 1: Struktur von Java-Programmen",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-01-struktur-von-java-programmen",
+        "branch": "main"
+      },
+      "description": "Struktur von Java-Programmen",
+      "due": "2026-11-09T13:00:00Z",
+      "due_meta": {
+        "input": "2026-11-09T14:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-10-27T09:00:00Z",
+      "available_from_meta": {
+        "input": "2026-10-27T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      }
+    },
+    {
+      "slug": "ueb02",
+      "name": "ÜB 2: Objekte und Klassen",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-02-objekte-und-klassen",
+        "branch": "main"
+      },
+      "description": "Objekte und Klassen",
+      "due": "2026-11-16T09:00:00Z",
+      "due_meta": {
+        "input": "2026-11-16T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-11-03T09:00:00Z",
+      "available_from_meta": {
+        "input": "2026-11-03T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "tests": [
+        {
+          "name": "Pet Adoption Center Task 3 Pet Buddy",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.petadoption.PetAdoptionCenterTest.task_3_correct_information_for_pet_buddy_printed",
+          "points": 5
+        },
+        {
+          "name": "Pet Adoption Center Task 4 Adopter Jane",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.petadoption.PetAdoptionCenterTest.task_4_correct_information_for_adopter_jane_printed",
+          "points": 5
+        },
+        {
+          "name": "Pet Adoption Center Task 7 Adoption",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.petadoption.PetAdoptionCenterTest.task_7_correct_information_for_adoption_printed",
+          "points": 10
+        },
+        {
+          "name": "Student Enrollment System Task 3 John Doe",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.enrollmentsystem.StudentEnrollmentSystemTest.task_3_correct_information_for_student_john_printed",
+          "points": 10
+        },
+        {
+          "name": "Student Enrollment System Task 3 Course Einfuehrung in die Informatik",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.enrollmentsystem.StudentEnrollmentSystemTest.task_3_correct_information_for_course_introduction_to_cs_printed",
+          "points": 20
+        },
+        {
+          "name": "Student Enrollment System Task 6 John is enrolled in Intro to CS",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.enrollmentsystem.StudentEnrollmentSystemTest.task_6_student_is_enrolled_in_introduction_to_computer_science",
+          "points": 10
+        },
+        {
+          "name": "Student Enrollment System Task 8 Grade is set to 4.0",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.enrollmentsystem.StudentEnrollmentSystemTest.task_8_grade_of_introduction_to_computer_science_is_set_to_4",
+          "points": 10
+        },
+        {
+          "name": "Student Enrollment System Task 11 John is enrolled in OOP",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.enrollmentsystem.StudentEnrollmentSystemTest.task_11_student_is_enrolled_in_oop",
+          "points": 10
+        },
+        {
+          "name": "Student Enrollment System Task 12 Print list of students enrolled           to Intro to CS",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.enrollmentsystem.StudentEnrollmentSystemTest.task_12_print_list_of_students_for_introduction_to_cs",
+          "points": 10
+        },
+        {
+          "name": "Student Enrollment System Task 14 John is not enrolled anymore           in Intro to CS",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.enrollmentsystem.StudentEnrollmentSystemTest.task_14_john_doe_not_enrolled_in_introduction_to_cs",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "slug": "ueb03",
+      "name": "ÜB 3: Kontrollflussstrukturen",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-03-kontrollfluss-strukturen",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb04",
+      "name": "ÜB 4: APIs verstehen und benutzen",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-04-APIs-verstehen-und-benutzen",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb04a",
+      "name": "ÜB 4a: Immutables und Optionals",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-04a-immutables-optionals",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb05",
+      "name": "ÜB 5: Eigene Operationen",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-05-eigene-operationen-schreiben",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb06",
+      "name": "ÜB 6: Eigene Klassen",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-06-eigene-klassen-implementieren",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb07a",
+      "name": "ÜB 7a: OOP-Grundlagen",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-07a-oop-basics",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb07b",
+      "name": "ÜB 7b: Abstraktion und Interfaces",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-07b-oop-advanced",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb08",
+      "name": "ÜB 8: Lambdas und Streams",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-08-lambdas-streams",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb09",
+      "name": "ÜB 9: Modellierung",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-09-modellierung",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "ueb10",
+      "name": "ÜB 10: Testen",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-10-testing",
+        "branch": "main"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "runtime": {
+        "java": "21"
+      },
+      "feedback_pr": true
+    },
+    {
+      "slug": "git-github-fundamentals",
+      "name": "Git & GitHub Fundamentals",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "github-starter-course",
+        "branch": "main"
+      },
+      "due": "2026-10-26T09:00:00Z",
+      "due_meta": {
+        "input": "2026-10-26T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-10-22T08:00:00Z",
+      "available_from_meta": {
+        "input": "2026-10-22T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+02:00",
+        "source": "auto-detected"
+      },
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "no_autograder": true,
+      "grading": {
+        "mode": "off"
+      },
+      "copy_about": true,
+      "copy_topics": true
+    },
+    {
+      "slug": "ub-0-objekte-und-klassen",
+      "name": "ÜB 0: Objekte und Klassen",
+      "description": "Übungsblatt zum grundlegenden konzeptionellen Verständnis von Objekten und Klassen",
+      "template": {
+        "owner": "PHL-INF520-Programmierprojekt-Uebungen",
+        "repo": "uebungsblatt-00-objekte-und-klassen-no-code",
+        "branch": "main"
+      },
+      "due": "2026-11-02T09:00:00Z",
+      "due_meta": {
+        "input": "2026-11-02T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-10-27T09:00:00Z",
+      "available_from_meta": {
+        "input": "2026-10-27T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "mode": "team",
+      "autograder": "default",
+      "max_group_size": 3,
+      "team_formation": "student",
+      "tests": [
+        {
+          "name": "Cookie Caper Task 5 Markdown file exists in root directory",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.ObjectsAndClassesTest.cookie_caper_markdown_file_exists_in_root_directory",
+          "timeout": 120,
+          "points": 25
+        },
+        {
+          "name": "Farmers Market Task 5 Markdown file exists in root directory",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.ObjectsAndClassesTest.farmers_market_markdown_file_exists_in_root_directory",
+          "timeout": 10,
+          "points": 25
+        },
+        {
+          "name": "Alien Invasion Task 5 Markdown file exists in root directory",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.ObjectsAndClassesTest.alien_invasion_markdown_file_exists_in_root_directory",
+          "timeout": 10,
+          "points": 25
+        },
+        {
+          "name": "Farmyard Frenzy Task 5 Markdown file exists in root directory",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.ObjectsAndClassesTest.farmyard_frenzy_markdown_file_exists_in_root_directory",
+          "timeout": 10,
+          "points": 25
+        }
+      ],
+      "feedback_pr": true,
+      "copy_about": true,
+      "copy_topics": true
+    }
+  ]
+}

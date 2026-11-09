@@ -199,19 +199,191 @@
     {
       "slug": "ueb03",
       "name": "ÜB 3: Kontrollflussstrukturen",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
       "template": {
         "owner": "PHL-INF520-Programmierprojekt-Uebungen",
         "repo": "uebungsblatt-03-kontrollfluss-strukturen",
         "branch": "main"
       },
-      "mode": "team",
-      "autograder": "default",
+      "description": "Kontrollflussstrukturen",
+      "available_from": "2026-11-10T09:00:00Z",
+      "available_from_meta": {
+        "input": "2026-11-10T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
       "max_group_size": 3,
       "team_formation": "student",
       "runtime": {
         "java": "21"
       },
-      "feedback_pr": true
+      "tests": [
+        {
+          "name": "Roller Coaster Task 1 Eligibility younger than 10 but taller than 1.3m",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.rollercoaster.RollerCoasterTest.person_younger_than_10_but_taller_than_1_3_meters_eligible_with_adult",
+          "points": 5
+        },
+        {
+          "name": "Roller Coaster Task 1 Eligibility Younger than 10 not eligible",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.rollercoaster.RollerCoasterTest.person_younger_than_10_not_eligible_to_ride",
+          "points": 5
+        },
+        {
+          "name": "Roller Coaster Task 1 Eligibility Taller than 1.3m but younger           than 10 not eligible",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.rollercoaster.RollerCoasterTest.person_taller_than_1_3_meters_but_younger_than_10_not_eligible_to_ride",
+          "points": 5
+        },
+        {
+          "name": "Roller Coaster Task 1 Eligibility smaller than 1.3m not eligible",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.rollercoaster.RollerCoasterTest.person_smaller_than_1_3_meters_not_eligible_to_ride",
+          "points": 5
+        },
+        {
+          "name": "Game Exercise Task 1 Enum Person implemented",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.game.GameCharacterTest.task_1_enum_person_implemented",
+          "points": 10
+        },
+        {
+          "name": "Game Exercise Task 2 Enum Ability implemented",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.game.GameCharacterTest.task_2_enum_ability_implemented",
+          "points": 10
+        },
+        {
+          "name": "Game Exercise Task 3 Game Characters Activate Ability Prints Correctly",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.game.GameCharacterTest.task_3_game_characters_activate_ability_prints_correctly",
+          "points": 10
+        },
+        {
+          "name": "Prime Number Sum Task 1 Verify Prime Numbers",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.math.PrimeNumberSumTest.task_1_is_prime_number",
+          "points": 10
+        },
+        {
+          "name": "Prime Number Sum Task 3 Sum of First Twenty Prime Numbers",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.math.PrimeNumberSumTest.task_3_sum_of_first_twenty_prime_numbers_printed",
+          "points": 10
+        },
+        {
+          "name": "Sum of Digits Task 1 Calculate Sum of Digits",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.math.SumOfDigitsTest.task_1_sum_of_digits",
+          "points": 10
+        },
+        {
+          "name": "Sum of Digits Task 2 Sum of Digits for 867194 Printed",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.math.SumOfDigitsTest.task_2_sum_of_digits_for_867194_printed",
+          "points": 10
+        },
+        {
+          "name": "Sum of Digits Task 3 Calculate Reverse Sum of Digits",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.math.SumOfDigitsTest.task_3_reverse_sum_of_digits",
+          "points": 10
+        },
+        {
+          "name": "Number Guesser Source Code Contains Required Snippets",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.math.NumberGuesserTest.number_guesser_source_code_contains_snippets",
+          "points": 10
+        },
+        {
+          "name": "FizzBuzz Validate FizzBuzz Output",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.fizzbuzz.FizzBuzzTest.test_fizzbuzz",
+          "points": 20
+        },
+        {
+          "name": "Pizza Disaster - Markdown File Exists in Root Directory",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.pizza.PizzaDisasterTest.pizza_disaster_markdown_file_exists_in_root_directory",
+          "points": 10
+        },
+        {
+          "name": "Pizza Disaster Task 5 - Corrected Output Identified",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.pizza.PizzaDisasterTest.task_5_corrected_output_identified",
+          "points": 10
+        },
+        {
+          "name": "Exception Handling - Markdown File Exists in Root Directory",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.ExceptionHandlingTest.exception_handling_markdown_file_exists_in_root_directory",
+          "points": 10
+        },
+        {
+          "name": "Exception Handling Task 1 - Output Correctly Identified",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.ExceptionHandlingTest.task_1_output_correctly_identified",
+          "points": 10
+        },
+        {
+          "name": "Bank Account Exception Task 1 - Deposit with Negative Amount Throws",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.BankAccountTest.task_1_deposit_with_negative_amount_throws_IllegalArgumentException",
+          "points": 10
+        },
+        {
+          "name": "Bank Account Exception Task 1 - Withdraw with Negative Amount Throws",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.BankAccountTest.task_1_withdraw_with_negative_amount_throws_IllegalArgumentException",
+          "points": 5
+        },
+        {
+          "name": "Bank Account Exception Task 3 - Main Method Handles Exception for Deposit",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.BankAccountTest.task_3_main_method_handles_exception_for_deposit_with_negative_arguments",
+          "points": 5
+        },
+        {
+          "name": "Bank Account Exception Task 4 - Main Method Updates Balance After Deposit 500",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.BankAccountTest.task_4_main_method_updates_balance_after_deposit_500",
+          "points": 5
+        },
+        {
+          "name": "Bank Account Exception Task 5 - Main Method Handles Exception for Withdraw  with Negative Arguments",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.BankAccountTest.task_5_main_method_handles_exception_for_withdraw_with_negative_arguments",
+          "points": 5
+        },
+        {
+          "name": "Bank Account Exc. Task 6 - Main Handles InsufficientFundsException for Withdrawal w Too High Amount",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.BankAccountTest.task_6_main_method_handles_InsufficientFundsException_for_withdraw_with_too_high_amount",
+          "points": 5
+        },
+        {
+          "name": "Bank Account Exception Task 7 - Main Method Updates Balance After Withdraw 500",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.exceptions.BankAccountTest.task_7_main_method_updates_balance_after_withdraw_500",
+          "points": 5
+        },
+        {
+          "name": "Roller Coaster Task 1 Eligibility Older than 12 and taller than 1.5m eligible",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.rollercoaster.RollerCoasterTest.person_older_than_12_and_taller_than_1_5_meters_eligible_to_ride",
+          "points": 5
+        },
+        {
+          "name": "Pizza Disaster Task 1 - Exception Correctly Identified",
+          "type": "run",
+          "run": "./gradlew test --tests de.phl.programmingproject.pizza.PizzaDisasterTest.task_1_exception_correctly_identified",
+          "points": 10
+        }
+      ]
     },
     {
       "slug": "ueb04",

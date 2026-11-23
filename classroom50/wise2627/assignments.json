@@ -20,15 +20,12 @@
     {
       "slug": "ueb00b",
       "name": "ÜB 0,5: Eigene Lösung testen",
-      "mode": "team",
-      "autograder": "default",
-      "feedback_pr": true,
+      "description": "Übungsblatt, um eigene Lösungen zu testen",
       "template": {
         "owner": "PHL-INF520-Programmierprojekt-Uebungen",
         "repo": "uebungsblatt-00b-eigene-loesung-testen",
         "branch": "main"
       },
-      "description": "Übungsblatt, um eigene Lösungen zu testen",
       "due": "2026-11-02T09:00:00Z",
       "due_meta": {
         "input": "2026-11-02T10:00:00",
@@ -43,6 +40,8 @@
         "offset": "+01:00",
         "source": "auto-detected"
       },
+      "mode": "team",
+      "autograder": "default",
       "max_group_size": 3,
       "team_formation": "student",
       "runtime": {
@@ -53,8 +52,8 @@
           "name": "SimpleCalculatorTestTest - Task 1 - calculator markdown exists",
           "type": "run",
           "run": "./gradlew test --tests \"de.phl.programmingproject.calculator.SimpleCalculatorTestTest.task_1_calculator_markdown_exists\"",
-          "points": 33,
-          "timeout": 120
+          "timeout": 120,
+          "points": 33
         },
         {
           "name": "SimpleCalculatorTest - Task 2 - all test cases succeed",
@@ -68,20 +67,18 @@
           "run": "./gradlew test --tests \"de.phl.programmingproject.calculator.SimpleCalculatorTestTest.task_1_test_cases_filled_out\"",
           "points": 33
         }
-      ]
+      ],
+      "feedback_pr": true
     },
     {
       "slug": "ueb01",
       "name": "ÜB 1: Struktur von Java-Programmen",
-      "mode": "team",
-      "autograder": "default",
-      "feedback_pr": true,
+      "description": "Struktur von Java-Programmen",
       "template": {
         "owner": "PHL-INF520-Programmierprojekt-Uebungen",
         "repo": "uebungsblatt-01-struktur-von-java-programmen",
         "branch": "main"
       },
-      "description": "Struktur von Java-Programmen",
       "due": "2026-11-09T13:00:00Z",
       "due_meta": {
         "input": "2026-11-09T14:00:00",
@@ -96,24 +93,24 @@
         "offset": "+01:00",
         "source": "auto-detected"
       },
+      "mode": "team",
+      "autograder": "default",
       "max_group_size": 3,
       "team_formation": "student",
       "runtime": {
         "java": "21"
-      }
+      },
+      "feedback_pr": true
     },
     {
       "slug": "ueb02",
       "name": "ÜB 2: Objekte und Klassen",
-      "mode": "team",
-      "autograder": "default",
-      "feedback_pr": true,
+      "description": "Objekte und Klassen",
       "template": {
         "owner": "PHL-INF520-Programmierprojekt-Uebungen",
         "repo": "uebungsblatt-02-objekte-und-klassen",
         "branch": "main"
       },
-      "description": "Objekte und Klassen",
       "due": "2026-11-16T09:00:00Z",
       "due_meta": {
         "input": "2026-11-16T10:00:00",
@@ -128,6 +125,8 @@
         "offset": "+01:00",
         "source": "auto-detected"
       },
+      "mode": "team",
+      "autograder": "default",
       "max_group_size": 3,
       "team_formation": "student",
       "runtime": {
@@ -138,6 +137,7 @@
           "name": "Pet Adoption Center Task 3 Pet Buddy",
           "type": "run",
           "run": "./gradlew test --tests de.phl.programmingproject.petadoption.PetAdoptionCenterTest.task_3_correct_information_for_pet_buddy_printed",
+          "timeout": 60,
           "points": 5
         },
         {
@@ -194,20 +194,18 @@
           "run": "./gradlew test --tests de.phl.programmingproject.enrollmentsystem.StudentEnrollmentSystemTest.task_14_john_doe_not_enrolled_in_introduction_to_cs",
           "points": 10
         }
-      ]
+      ],
+      "feedback_pr": true
     },
     {
       "slug": "ueb03",
       "name": "ÜB 3: Kontrollflussstrukturen",
-      "mode": "team",
-      "autograder": "default",
-      "feedback_pr": true,
+      "description": "Kontrollflussstrukturen",
       "template": {
         "owner": "PHL-INF520-Programmierprojekt-Uebungen",
         "repo": "uebungsblatt-03-kontrollfluss-strukturen",
         "branch": "main"
       },
-      "description": "Kontrollflussstrukturen",
       "available_from": "2026-11-10T09:00:00Z",
       "available_from_meta": {
         "input": "2026-11-10T10:00:00",
@@ -215,6 +213,8 @@
         "offset": "+01:00",
         "source": "auto-detected"
       },
+      "mode": "team",
+      "autograder": "default",
       "max_group_size": 3,
       "team_formation": "student",
       "runtime": {
@@ -225,6 +225,7 @@
           "name": "Roller Coaster Task 1 Eligibility younger than 10 but taller than 1.3m",
           "type": "run",
           "run": "./gradlew test --tests de.phl.programmingproject.rollercoaster.RollerCoasterTest.person_younger_than_10_but_taller_than_1_3_meters_eligible_with_adult",
+          "timeout": 60,
           "points": 5
         },
         {
@@ -383,7 +384,8 @@
           "run": "./gradlew test --tests de.phl.programmingproject.pizza.PizzaDisasterTest.task_1_exception_correctly_identified",
           "points": 10
         }
-      ]
+      ],
+      "feedback_pr": true
     },
     {
       "slug": "ueb04",
@@ -410,6 +412,20 @@
         "repo": "uebungsblatt-04a-immutables-optionals",
         "branch": "main"
       },
+      "due": "2026-11-30T09:00:00Z",
+      "due_meta": {
+        "input": "2026-11-30T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-11-24T09:00:00Z",
+      "available_from_meta": {
+        "input": "2026-11-24T10:00:00",
+        "zone": "Europe/Berlin",
+        "offset": "+01:00",
+        "source": "auto-detected"
+      },
       "mode": "team",
       "autograder": "default",
       "max_group_size": 3,
@@ -417,6 +433,50 @@
       "runtime": {
         "java": "21"
       },
+      "tests": [
+        {
+          "name": "Student - Task 1 - Student has private final fields name and studentId",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.StudentTest.task_1_student_has_private_final_fields_for_name_and_studentid\"",
+          "timeout": 120,
+          "points": 15
+        },
+        {
+          "name": "Student - Task 1 - Constructor sets required fields and getters return  values",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.StudentTest.task_1_constructor_sets_required_fields_and_getters_return_values\"",
+          "timeout": 120,
+          "points": 15
+        },
+        {
+          "name": "Student - Task 2 - profileImageUrl Optional present when non-null",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.StudentTest.task_2_profileImageUrl_optional_present_when_non_null\"",
+          "timeout": 120,
+          "points": 15
+        },
+        {
+          "name": "Student - Task 2 - profileImageUrl Optional empty when null",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.StudentTest.task_2_profileImageUrl_optional_empty_when_null\"",
+          "timeout": 120,
+          "points": 10
+        },
+        {
+          "name": "Student - Task 3 - Prints expected output from main",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.StudentTest.task_3_prints_expected_output_from_main\"",
+          "timeout": 120,
+          "points": 10
+        },
+        {
+          "name": "Student - Task 3 - printStudentInfo reflection invocation produces expected output",
+          "type": "run",
+          "run": "./gradlew test --tests \"de.phl.programmingproject.StudentTest.task_3_printStudentInfo_reflection_invocation_produces_expected_output\"",
+          "timeout": 120,
+          "points": 15
+        }
+      ],
       "feedback_pr": true
     },
     {
@@ -540,7 +600,7 @@
     },
     {
       "slug": "git-github-fundamentals",
-      "name": "Git & GitHub Fundamentals",
+      "name": "Git \u0026 GitHub Fundamentals",
       "template": {
         "owner": "PHL-INF520-Programmierprojekt-Uebungen",
         "repo": "github-starter-course",
